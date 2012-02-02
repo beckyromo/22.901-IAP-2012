@@ -1,0 +1,10 @@
+! 1-d, homogeneous slab aka drop r variable, 1 energy group drop Energy variable, isotropic scattering in LAB coordinates, no fission, isotropic uniform source
+! monte carlo : nuetronic analysis involves simluateing neutrons 1-by-1
+! lifetime of a neutron:  1. born at some location and traveling angle
+!                         2. it then transports location so it can a) cross a surface,go back to 2 b) leak out of system, kill neutron c) collide with an isotope, go to 3
+!                         3. if it collides get a collision type it can a) be absorbed, kill neutron or b) scatter, get new angle in lab
+!                         4. if particle not dead go back to 2
+
+
+delta_x=s*mu  s=free-flight distance
+mu=cos(theta)

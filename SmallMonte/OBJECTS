@@ -1,0 +1,9 @@
+objects = \
+execute.o \
+geometry.o \
+global.o \
+main.o \
+material.o \
+particle.o \
+tally.o \
+timing.o
