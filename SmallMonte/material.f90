@@ -27,9 +27,8 @@ contains
     write(*,*) 'Enter macroscopic scattering cross-section:'
     read(*,*) this%scattxs
 
-    ! ask user for total macroscopic cross-section
-    write(*,*) 'Enter total macroscopic cross-section:'
-    read(*,*) this%totalxs
+    ! calculate total macroscopic cross-section
+    this%totalxs=this%absxs+this%scattxs
 
   end subroutine read_material
 
